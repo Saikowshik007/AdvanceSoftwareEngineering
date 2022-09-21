@@ -6,16 +6,11 @@ abstract class Device {
         this.Manufacturer=Manufacturer;
         this.specs=specs;
     }
-    String getName(){
-        return name;
-    }
-    //public String setName(String name);
-    String getManufacturer(){
-        return Manufacturer;
-    }
-    String getSpecs(){
-        return specs;
-    }
+    abstract String getName();
+
+    abstract String getManufacturer();
+
+    abstract String getSpecs();
     @Override
     public String toString(){
         return ""+getName()+""+getManufacturer()+""+getSpecs();
